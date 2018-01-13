@@ -55,10 +55,7 @@ paths:
             required: true
             schema:
                   $ref: '#/definitions/NewCase' 
-            examples: 
-                objectExample:
-                    externalValue: 'http://jsoneditoronline.org/?id=7a307fc39d48cb1dc3338fb1c5456163'       
-        
+
         responses: 
             "200":
                 $ref: '#/responses/CaseResponse'
@@ -250,9 +247,8 @@ paths:
             enum:
               - ASSIGNEE
               - PERMISSION
-              - CANDIDATE
-              - HISTORICASSIGNEE
-              - HISTORICAUTHORIZED
+              - HISTORICAL
+              - DEPARTMENT
             default: ASSIGNEE        
     
         responses: 
